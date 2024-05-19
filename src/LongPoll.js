@@ -44,7 +44,7 @@ class LongPoll {
      * @param {Function} handler The function to handle the response
      */
 
-    static poll(url, data, handler) {
+    static send(url, data, handler) {
 
         let form = new FormData;
 

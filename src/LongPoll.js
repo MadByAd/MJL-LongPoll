@@ -26,7 +26,7 @@ class LongPoll {
             if(this.readyState == 4 && this.status == 200) {
                 handler(JSON.parse(this.responseText));
                 if(repeat) {
-                    LongPoll.send(url, data, handler, repeat);
+                    LongPoll.poll(url, data, handler, repeat);
                 }
             }
         };
